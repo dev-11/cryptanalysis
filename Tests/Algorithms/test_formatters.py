@@ -20,9 +20,3 @@ class FormattersTests(unittest.TestCase):
         block_length = 5
         respaced_text = Algorithms.formatters.respace_text(text, block_length)
         self.assertEqual([], respaced_text)
-
-    def test_respacing_empty_text_to_empty_blocks(self):
-        text = ''
-        block_length = 0
-        respaced_text = Algorithms.formatters.respace_text(text, block_length)
-        self.failureException([], respaced_text)
