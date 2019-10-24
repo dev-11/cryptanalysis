@@ -4,5 +4,5 @@ def decode(text, shift, alphabet):
     return str.translate(text, str.maketrans(alphabet, shifted_alphabet))
 
 
-def encode(text, shift, alphabet):
-    return decode(text, shift, alphabet)
+encode = decode
+
