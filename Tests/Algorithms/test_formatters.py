@@ -20,3 +20,8 @@ class FormattersTests(unittest.TestCase):
         block_length = 5
         respaced_text = Algorithms.formatters.respace_text(text, block_length)
         self.assertEqual([], respaced_text)
+
+    def test_respace_text_throws_ValueError_on_zero_block_length(self):
+        text = ''
+        block_length = 0
+        self.assertRaises(ValueError, Algorithms.formatters.respace_text, text, block_length)
