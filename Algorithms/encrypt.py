@@ -1,4 +1,4 @@
-from Algorithms import formatters
+from Formatters import formatters
 from Algorithms import caesar_cypher
 
 

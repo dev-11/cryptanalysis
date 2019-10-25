@@ -1,5 +1,5 @@
 from Algorithms import caesar_cypher
-from Algorithms import formatters
+from Formatters import formatters
 
 
 def exhaust(cipher, alphabet):

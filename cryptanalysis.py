@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from Algorithms import encrypt, decrypt, formatters
+from Algorithms import encrypt, decrypt
+from Formatters import formatters
 import string
 from termcolor import colored
 
