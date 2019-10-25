@@ -25,3 +25,18 @@ class FormattersTests(unittest.TestCase):
         text = ''
         block_length = 0
         self.assertRaises(ValueError, Algorithms.formatters.respace_text, text, block_length)
+
+    def test_remove_punctuation_removes_non_alnum_chars(self):
+        plain_text = 'as-df,qw\'er'
+        clean_text = Algorithms.formatters.remove_punctuation(plain_text)
+        self.assertEqual('asdfqwer', clean_text)
+
+    def test_remove_punctuation_removes_space_chars(self):
+        plain_text = ' as    d f '
+        clean_text = Algorithms.formatters.remove_punctuation(plain_text)
+        self.assertEqual('asdf', clean_text)
+
+    def test_remove_punctuation_returns_empty_string_for_empty_string(self):
+        plain_text = ''
+        clean_text = Algorithms.formatters.remove_punctuation(plain_text)
+        self.assertEqual('', clean_text)
