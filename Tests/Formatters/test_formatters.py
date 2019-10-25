@@ -21,8 +21,8 @@ class FormattersTests(unittest.TestCase):
         respaced_text = Formatters.formatters.respace_text(text, block_length)
         self.assertEqual([], respaced_text)
 
-    def test_respace_text_throws_ValueError_on_zero_block_length(self):
-        text = 'asdf\ta s d f'
+    def test_respace_text_returns_single_block_for_zero_block_length(self):
+        text = ' asdf\ta s d f\t'
         block_length = 0
         self.assertEqual('asdfasdf', Formatters.formatters.respace_text(text, block_length))
 
