@@ -1,5 +1,6 @@
 import unittest
 import Algorithms.formatters
+import string
 
 
 class FormattersTests(unittest.TestCase):
