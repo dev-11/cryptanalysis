@@ -4,7 +4,7 @@ import string
 
 
 class EncryptTests(unittest.TestCase):
-    def test_encrypt(self):
+    def test_exhaust_finds_breaks_the_cipher(self):
         plain_text = 'BTEGRXFS'
         alphabet = string.ascii_uppercase
         candidates = Algorithms.exhaust(plain_text, alphabet)

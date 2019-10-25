@@ -4,7 +4,7 @@ import string
 
 
 class EncryptTests(unittest.TestCase):
-    def test_encrypt(self):
+    def test_encrypt_creates_respaced_cipher_from_plain_text(self):
         plain_text = 'asdfqwer'
         key = 1
         alphabet = string.ascii_uppercase
