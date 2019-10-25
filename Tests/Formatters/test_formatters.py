@@ -22,9 +22,9 @@ class FormattersTests(unittest.TestCase):
         self.assertEqual([], respaced_text)
 
     def test_respace_text_throws_ValueError_on_zero_block_length(self):
-        text = ''
+        text = 'asdf\ta s d f'
         block_length = 0
-        self.assertRaises(ValueError, Formatters.formatters.respace_text, text, block_length)
+        self.assertEqual('asdfasdf', Formatters.formatters.respace_text(text, block_length))
 
     def test_remove_punctuation_removes_non_alnum_chars(self):
         plain_text = 'as-df,qw\'er'
