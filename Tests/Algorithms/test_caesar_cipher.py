@@ -1,6 +1,6 @@
 import unittest
-from Algorithms.caesar_cipher import CaesarCipher
 import string
+from Algorithms import CaesarCipher
 
 
 class CaesarCipherTests(unittest.TestCase):
