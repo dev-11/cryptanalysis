@@ -25,21 +25,21 @@ class CaesarCipherTests(unittest.TestCase):
         encoded_text = CaesarCipher().encrypt(plain_text, alphabet, shift)
         self.assertEqual('', encoded_text)
 
-    def test_decode_works_with_empty_text(self):
+    def test_decrypt_works_with_empty_text(self):
         encoded_text = ''
         shift = 1
         alphabet = string.ascii_lowercase
         decoded_text = CaesarCipher().decrypt(encoded_text, alphabet, shift)
         self.assertEqual('', decoded_text)
 
-    def test_decode_returns_original_text_on_zero_shift(self):
+    def test_decrypt_returns_original_text_on_zero_shift(self):
         encoded_text = string.ascii_lowercase
         shift = 0
         alphabet = string.ascii_lowercase
         decoded_text = CaesarCipher().decrypt(encoded_text, alphabet, shift)
         self.assertEqual(string.ascii_lowercase, decoded_text)
 
-    def test_encode_returns_original_text_on_zero_shift(self):
+    def test_encrypt_returns_original_text_on_zero_shift(self):
         plain_text = string.ascii_lowercase
         shift = 0
         alphabet = string.ascii_lowercase
