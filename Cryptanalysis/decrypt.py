@@ -1,4 +1,4 @@
-from Algorithms.caesar_cipher import CaesarCipher
+from Algorithms import CaesarCipher
 from Formatters import sanitiser
 
 

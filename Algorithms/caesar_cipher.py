@@ -1,4 +1,4 @@
-from Algorithms.cipher import Cipher
+from Algorithms import Cipher
 
 
 class CaesarCipher(Cipher):

@@ -1,5 +1,5 @@
 from Formatters import formatters, sanitiser
-from Algorithms.caesar_cipher import CaesarCipher
+from Algorithms import CaesarCipher
 
 
 def encrypt(plain_text, alphabet, key, respace_block_length):
