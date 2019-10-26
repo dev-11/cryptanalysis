@@ -2,7 +2,7 @@
 
 from Cryptanalysis import encrypt
 from Cryptanalysis import decrypt
-from Formatters import formatters
+from Formatters import sanitiser
 import string
 from termcolor import colored
 
@@ -19,7 +19,7 @@ def main():
     print(*cipher)
     print("========== CANDIDATES ==========")
     for idx, c in enumerate(candidates):
-        current_color = 'green' if formatters.remove_punctuation(plain_text.upper()) == c else 'cyan'
+        current_color = 'green' if sanitiser.remove_punctuation(plain_text.upper()) == c else 'cyan'
         print(colored(str(idx).zfill(2) + ': ' + c, current_color))
         print()
 

@@ -1,9 +1,9 @@
 from Algorithms.caesar_cipher import CaesarCipher
-from Formatters import formatters
+from Formatters import sanitiser
 
 
 def exhaust(cipher, alphabet):
-    merged_cipher = formatters.merge_cipher_blocks(cipher)
+    merged_cipher = sanitiser.merge_cipher_blocks(cipher)
     caesar_cipher = CaesarCipher()
     for shift in range(len(alphabet)):
-        yield caesar_cipher.decrypt(merged_cipher, shift, alphabet)
+        yield caesar_cipher.decrypt(merged_cipher, alphabet, shift)
