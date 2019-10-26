@@ -45,3 +45,9 @@ class CaesarCipherTests(unittest.TestCase):
         alphabet = string.ascii_lowercase
         encoded_text = CaesarCipher().encrypt(plain_text, alphabet, shift)
         self.assertEqual(string.ascii_lowercase, encoded_text)
+
+    def test_create_shifted_alphabet(self):
+        alphabet = string.ascii_lowercase
+        shift = 1
+        shifted_alphabet = CaesarCipher().create_shifted_alphabet(alphabet, shift)
+        self.assertEqual('bcdefghijklmnopqrstuvwxyza', shifted_alphabet)
