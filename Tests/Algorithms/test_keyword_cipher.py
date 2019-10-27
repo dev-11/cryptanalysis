@@ -10,7 +10,7 @@ class KeywordCipherTests(unittest.TestCase):
         cipher = KeywordCipher().encrypt(plain_text, string.ascii_uppercase, keyword)
         self.assertEqual('OTIPRTPC ZM NUC BCX NA NUC UCTJN AQ DCADOC', cipher)
 
-    def test_keyword_cipher_returns_correct_cipher(self):
+    def test_keyword_cipher_returns_correct_plain_text(self):
         plain_text = 'OTIPRTPC ZM NUC BCX NA NUC UCTJN AQ DCADOC'
         keyword = 'THEGCHQPUZZLEBOOKII'
         decrypted_text = KeywordCipher().decrypt(plain_text, string.ascii_uppercase, keyword)
