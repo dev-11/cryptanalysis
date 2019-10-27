@@ -1,11 +1,11 @@
 class KeywordCipher:
     def encrypt(self, plain_text, alphabet, keyword):
         key = self.create_key(alphabet, keyword)
-        return str.translate(plain_text, str.maketrans(alphabet, key))
+        return plain_text.translate(str.maketrans(alphabet, key))
 
     def decrypt(self, cipher_text, alphabet, keyword):
         key = self.create_key(alphabet, keyword)
-        return str.translate(cipher_text, str.maketrans(key, alphabet))
+        return cipher_text.translate(str.maketrans(key, alphabet))
 
     @staticmethod
     def create_key(alphabet, keyword):

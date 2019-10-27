@@ -4,17 +4,17 @@ from Algorithms import AtbashCipher
 
 
 class AtbashCipherTests(unittest.TestCase):
-    def test_01(self):
+    def test_encrypt_returns_correct_cipher(self):
         plain_text = 'abc'
         alphabet = string.ascii_lowercase
         cipher = AtbashCipher().encrypt(plain_text, alphabet)
         self.assertEqual('zyx', cipher)
 
-    def test_02(self):
-        plain_text = 'zyx'
+    def test_encrypt_returns_correct_plain_text(self):
+        cipher = 'zyx'
         alphabet = string.ascii_lowercase
-        cipher = AtbashCipher().decrypt(plain_text, alphabet)
-        self.assertEqual('abc', cipher)
+        plain_text = AtbashCipher().decrypt(cipher, alphabet)
+        self.assertEqual('abc', plain_text)
 
     def test_create_key_creates_key_from_alphabet(self):
         alphabet = string.ascii_lowercase

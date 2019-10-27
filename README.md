@@ -9,8 +9,58 @@ cryptography algorithms
 
 ### Substitutional ciphers
 
-- [x] Atbash cipher
-- [x] Caesar cipher
-- [x] ROT13 cipher
+- [x] Affine
+- [x] Atbash
+- [ ] Autokey
+- [ ] Beaufort
+- [x] Caesar
+- [ ] Chaocipher
+- [ ] Great
+- [ ] Hill
+- [ ] Pigpen
+- [x] ROT13
+- [ ] Running key
 - [x] Keyword cipher
 
+### Transpositional cipher
+
+- [ ] Columnar
+- [ ] Double
+- [ ] Myszkowski
+- [ ] Rail fence
+- [ ] Route
+
+### Square
+
+- [ ] Playfair
+- [ ] Two-square
+- [ ] Four-square
+
+### Polybius square
+
+- [ ] ADFGVX
+- [ ] ADFGX
+- [ ] Bifid
+- [ ] Nihilist
+- [ ] Tap code
+- [ ] Trifid
+- [ ] VIC cipher
+
+### Polyalphabetical
+
+- [ ] Alberti
+- [ ] Enigma
+- [ ] Trithemius
+- [ ] Vigenère
+
+### Other
+
+- [ ] BATCO
+- [ ] DRYAD
+- [ ] Kama Sutra
+- [ ] One-time pad
+- [ ] Rasterschlüssel 44
+- [ ] Reihenschieber
+- [ ] Reservehandverfahren
+- [ ] Slidex
+- [ ] Solitaire
