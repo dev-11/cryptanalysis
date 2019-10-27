@@ -9,6 +9,6 @@ cryptography algorithms
 
 ### Substitutional ciphers
 
--  [x]  Caesar cipher
--  [x]  ROT13
--  [x]  Keyword cipher
+  -  [x]  Caesar cipher
+  -  [x]  ROT13
+  -  [x]  Keyword cipher
