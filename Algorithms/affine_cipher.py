@@ -1,12 +1,10 @@
 class AffineCipher:
     def encrypt(self, plain_text, alphabet, a, b):
         key = self.create_key(alphabet, a, b)
-        print(key)
         return plain_text.translate(str.maketrans(alphabet, key))
 
     def decrypt(self, cipher_text, alphabet, a, b):
         key = self.create_key(alphabet, a, b)
-        print(key)
         return cipher_text.translate(str.maketrans(key, alphabet))
 
     @staticmethod
