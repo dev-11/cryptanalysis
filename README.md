@@ -51,7 +51,7 @@ cryptography algorithms
 - [ ] Alberti
 - [ ] Enigma
 - [ ] Trithemius
-- [ ] Vigenère
+- [X] Vigenère
 
 ### Other
 
