@@ -5,3 +5,4 @@ from .keyword_cipher import KeywordCipher
 from .atbash_cipher import AtbashCipher
 from .affine_cipher import AffineCipher
 from .vigenere_cipher import VigenereCipher
+from .rail_fence_cipher import RailFenceCipher

@@ -1,7 +1,7 @@
 class RailFenceCipher:
     def encrypt(self, plain_text, key):
-        pass
+        return ''.join(plain_text[index] for index in range(len(plain_text)))
 
-    def decrypt(self, encripted_text, key):
+    def decrypt(self, encrypted_text, key):
         pass
 
