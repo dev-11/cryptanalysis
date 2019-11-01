@@ -17,7 +17,7 @@ cryptography algorithms
 - [ ] Chaocipher
 - [ ] Great
 - [ ] Hill
-- [ ] Pigpen
+- [ ] _Pigpen_
 - [x] ROT13
 - [ ] Running key
 - [x] Keyword cipher
