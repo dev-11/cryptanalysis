@@ -19,7 +19,7 @@ cryptography algorithms
 - [ ] Hill
 - [ ] _Pigpen_
 - [x] ROT13
-- [ ] Running key
+- [x] Running key
 - [x] Keyword cipher
 
 ### Transpositional cipher
