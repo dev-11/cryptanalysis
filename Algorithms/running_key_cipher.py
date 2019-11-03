@@ -7,7 +7,7 @@ class RunningKeyCipher:
 
     def encrypt(self, plain_text, alphabet, keyword):
         key = self.generate_key(keyword, len(plain_text))
-        tabula_recta = self.generate_tabule_recta(alphabet)
+        tabula_recta = self.generate_tabula_recta(alphabet)
         cipher = ''
 
         for index, initial_char in enumerate(key):
