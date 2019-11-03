@@ -7,7 +7,6 @@ class RunningKeyCipherTests(unittest.TestCase):
     def test_generate_key_generates_throws_value_error_when_keyword_is_shorter_than_plain_text(self):
         plain_text = 'ATTACKATDAWN'
         keyword = 'LEMON'
-        key = RunningKeyCipher().generate_key(keyword, len(plain_text))
         self.assertRaises(ValueError, RunningKeyCipher().generate_key, keyword, len(plain_text))
 
     def test_generate_key_generates_correct_key_when_keyword_is_longer_than_plain_text(self):
@@ -32,14 +31,14 @@ class RunningKeyCipherTests(unittest.TestCase):
     def test_encrypt_returns_correct_cipher(self):
         plain_text = 'ATTACKATDAWN'
         alphabet = string.ascii_uppercase
-        keyword = 'LEMON'
+        keyword = 'LEMONLEMONLEMON'
         cipher = RunningKeyCipher().encrypt(plain_text, alphabet, keyword)
         self.assertEqual('LXFOPVEFRNHR', cipher)
 
     def test_decrypt_returns_correct_plain_text(self):
         cipher_text = 'LXFOPVEFRNHR'
         alphabet = string.ascii_uppercase
-        keyword = 'LEMON'
+        keyword = 'LEMONLEMONLEMON'
         cipher = RunningKeyCipher().decrypt(cipher_text, alphabet, keyword)
         self.assertEqual('ATTACKATDAWN', cipher)
 
