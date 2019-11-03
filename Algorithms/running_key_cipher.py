@@ -1,3 +1,6 @@
+from Algorithms.vigenere_cipher import VigenereCipher
+
+
 class RunningKeyCipher:
     def __init__(self):
         self._vigenere_cipher = VigenereCipher()
