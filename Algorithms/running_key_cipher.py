@@ -29,6 +29,7 @@ class RunningKeyCipher:
 
         return plain_text
 
+    @staticmethod
     def generate_key(keyword, key_length):
         len_keyword = len(keyword)
         if len_keyword < key_length:
@@ -36,6 +37,6 @@ class RunningKeyCipher:
 
         return keyword[:key_length]
 
-    def generate_tabula_recta(alphabet):
+    def generate_tabula_recta(self, alphabet):
         return self._vigenere_cipher.generate_tabula_recta(alphabet)
 
