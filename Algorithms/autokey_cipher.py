@@ -6,7 +6,7 @@ class AutokeyCipher:
         self._vigenere_cipher = VigenereCipher()
 
     def encrypt(self, plain_text, alphabet, keyword):
-        key = self.generate_key(keyword, len(plain_text))
+        key = self.generate_key(keyword, plain_text)
         tabula_recta = self.generate_tabula_recta(alphabet)
         cipher = ''
 
@@ -18,7 +18,7 @@ class AutokeyCipher:
         return cipher
 
     def decrypt(self, cipher_text, alphabet, keyword):
-        key = self.generate_key(keyword, len(cipher_text))
+        key = self.generate_key(keyword, cipher_text)
         tabula_recta = self.generate_tabula_recta(alphabet)
         plain_text = ''
 
@@ -36,7 +36,7 @@ class AutokeyCipher:
         if len_keyword < len_text:
             return f'{keyword}{text[:len_text-len_keyword]}'
 
-        return keyword
+        return keyword[:len_text]
 
     def generate_tabula_recta(self, alphabet):
         return self._vigenere_cipher.generate_tabula_recta(alphabet)
