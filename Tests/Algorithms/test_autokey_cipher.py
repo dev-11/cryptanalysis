@@ -6,9 +6,9 @@ from Algorithms import AutokeyCipher
 class AutokeyCipherTests(unittest.TestCase):
     def test_generate_key_generates_correct_key_when_keyword_is_shorter_than_plain_text(self):
         plain_text = 'ATTACKAT'
-        keyword = 'LEMON'
+        keyword = 'L'
         key = AutokeyCipher().generate_key(keyword, plain_text)
-        self.assertEqual('LEMONATT', key)
+        self.assertEqual('LATTACKA', key)
 
     def test_generate_key_generates_correct_key_when_keyword_is_longer_than_plain_text(self):
         plain_text = 'ATT'

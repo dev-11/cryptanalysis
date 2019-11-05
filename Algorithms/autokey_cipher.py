@@ -34,7 +34,7 @@ class AutokeyCipher:
         len_text = len(text)
         len_keyword = len(keyword)
         if len_keyword < len_text:
-            return f'{keyword}{text[:len_text-len_keyword]}'
+            return keyword + text[:len_text-len_keyword]
 
         return keyword[:len_text]
 
