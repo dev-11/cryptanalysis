@@ -1,7 +1,7 @@
 from Algorithms.vigenere_cipher import VigenereCipher
 
 
-class AutoKeyCipher:
+class AutokeyCipher:
     def __init__(self):
         self._vigenere_cipher = VigenereCipher()
 
