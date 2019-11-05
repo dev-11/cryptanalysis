@@ -11,7 +11,7 @@ cryptography algorithms
 
 - [x] Affine
 - [x] Atbash
-- [ ] Autokey
+- [x] Autokey
 - [ ] Beaufort
 - [x] Caesar
 - [ ] Chaocipher
