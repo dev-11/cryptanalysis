@@ -4,21 +4,16 @@ from Algorithms import AutokeyCipher
 
 
 class AutokeyCipherTests(unittest.TestCase):
-    def test_generate_key_generates_throws_value_error_when_keyword_is_shorter_than_plain_text(self):
-        plain_text = 'ATTACKATDAWN'
-        keyword = 'LEMON'
-        self.assertRaises(ValueError, RunningKeyCipher().generate_key, keyword, len(plain_text))
-
     def test_generate_key_generates_correct_key_when_keyword_is_longer_than_plain_text(self):
         plain_text = 'ATT'
         keyword = 'LEMON'
-        key = AutokeyCipher().generate_key(keyword, len(plain_text))
+        key = AutokeyCipher().generate_key(keyword, plain_text)
         self.assertEqual('LEM', key)
 
     def test_generate_key_generates_correct_key_when_keyword_length_is_equal_to_plain_text_length(self):
         plain_text = 'ATTAC'
         keyword = 'LEMON'
-        key = AutokeyCipher().generate_key(keyword, len(plain_text))
+        key = AutokeyCipher().generate_key(keyword, plain_text)
         self.assertEqual('LEMON', key)
 
     def test_generate_tabula_recta_creates_correct_matrix(self):
