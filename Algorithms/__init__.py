@@ -7,5 +7,5 @@ from .affine_cipher import AffineCipher
 from .vigenere_cipher import VigenereCipher
 from .rail_fence_cipher import RailFenceCipher
 from .running_key_cipher import RunningKeyCipher
-from .auto_key_cipher import AutokeyCipher
+from .autokey_cipher import AutokeyCipher
 
