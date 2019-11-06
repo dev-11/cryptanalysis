@@ -33,10 +33,10 @@ class AutokeyCipher:
     def generate_key(keyword, text):
         len_text = len(text)
         len_keyword = len(keyword)
-        if len_keyword < len_text:
-            return keyword + text[:len_text-len_keyword]
 
-        return keyword[:len_text]
+        return keyword + text[:len_text - len_keyword]
+            if len_keyword < len_text
+            else keyword[:len_text]
 
     def generate_tabula_recta(self, alphabet):
         return self._vigenere_cipher.generate_tabula_recta(alphabet)
