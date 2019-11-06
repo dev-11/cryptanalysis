@@ -34,8 +34,8 @@ class AutokeyCipher:
         len_text = len(text)
         len_keyword = len(keyword)
 
-        return keyword + text[:len_text - len_keyword]
-            if len_keyword < len_text
+        return keyword + text[:len_text - len_keyword] \
+            if len_keyword < len_text \
             else keyword[:len_text]
 
     def generate_tabula_recta(self, alphabet):
