@@ -38,8 +38,8 @@ cryptography algorithms
 
 ### Polybius square
 
-- [ ] ADFGVX
-- [ ] ADFGX
+- [ ] **ADFGVX**
+- [ ] **ADFGX**
 - [ ] Bifid
 - [ ] Nihilist
 - [ ] Tap code
