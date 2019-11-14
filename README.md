@@ -27,7 +27,7 @@ cryptography algorithms
 - [ ] Columnar
 - [ ] Double
 - [ ] Myszkowski
-- [ ] Rail fence
+- [ ] **Rail fence**
 - [ ] Route
 
 ### Square
