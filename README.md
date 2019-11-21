@@ -49,7 +49,7 @@ cryptography algorithms
 ### Polyalphabetical
 
 - [ ] Alberti
-- [ ] Enigma
+- [ ] **Enigma**
 - [ ] Trithemius
 - [x] Vigenère
 
